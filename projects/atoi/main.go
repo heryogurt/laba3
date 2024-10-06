@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var ch string
+	fmt.Println("enter number: ")
+	fmt.Scan(&ch)
+	for i := 0; i < len(ch); i++ {
+		a := ch[i] - 48
+		fmt.Print(a * a)
+	}
 }
